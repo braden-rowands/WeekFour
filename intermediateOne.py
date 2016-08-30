@@ -1,29 +1,31 @@
-cycles = int(5)
+cycles = 5
 numbers = []
-for i in range (1,cycles+1):
-    number = int("Please enter a positive whole number")
+for i in range (cycles):
+    number = input("Please enter a positive whole number")
     numbers.append(number)
 
 firstNumber = numbers[0]
 print("first number is {}".format(firstNumber))
 
-lastNumber = numbers [5]
+lastNumber = numbers [4]
 print("last number is {}".format(lastNumber))
-
+test = 1000
 for i in numbers:
-    smallest = numbers [0]
-    if numbers < smallest:
-        smallest = numbers
-    i += 1
+    smallest = int(i)
+    if smallest < test:
+        test = smallest
+print(test)
 
+testOne = 1
 for i in numbers:
-    highest = numbers [0]
-    if numbers > highest:
-        highest = numbers
-    i += 1
+    highest = int(i)
+    if highest > testOne:
+        testOne = highest
+print(testOne)
 
+total = 0
 for i in numbers:
-    total = numbers + numbers
-    i += 1
+    total += int(i)
 average = total / 5
+print(average)
 
